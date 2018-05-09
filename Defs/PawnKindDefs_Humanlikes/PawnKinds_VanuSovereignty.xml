@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef Name="VaunsovereigntyBase" Abstract="True">
-    <defaultFactionType>Vaunsovereignty</defaultFactionType>
+  <PawnKindDef Name="VanuSovereigntyBase" Abstract="True">
+    <defaultFactionType>VanuSovereignty</defaultFactionType>
     <chemicalAddictionChance>0.005</chemicalAddictionChance>
     <baseRecruitDifficulty>0.99</baseRecruitDifficulty>
     <backstoryCryptosleepCommonality>0.0004</backstoryCryptosleepCommonality>
     <backstoryCategory>Civil</backstoryCategory>
     <apparelTags>
-      <li>Vaunsovereignty</li>
+      <li>VanuSovereignty</li>
     </apparelTags>
   </PawnKindDef>
 
-  <PawnKindDef Name="VSinfantry" ParentName="VaunsovereigntyBase">
+  <PawnKindDef Name="VSinfantry" ParentName="VanuSovereigntyBase">
     <defName>VSinfantry</defName>
     <label>VS Light Assault</label>
     <race>Human</race>
@@ -81,7 +81,7 @@
     <maxGenerationAge>60</maxGenerationAge>
   </PawnKindDef>
   
-   <PawnKindDef ParentName="VaunsovereigntyBase">
+   <PawnKindDef ParentName="VanuSovereigntyBase">
     <defName>VSinfiltratorSlash</defName>
     <label>VS Heavy Assault trooper</label>
     <race>Human</race>
@@ -131,7 +131,7 @@
     <trader>true</trader>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="VaunsovereigntyBase">
+  <PawnKindDef ParentName="VanuSovereigntyBase">
     <defName>VSHeavyAssault</defName>
     <label>VS Heavy Assault trooper</label>
     <race>Human</race>
@@ -175,7 +175,7 @@
     </inventoryOptions>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="VaunsovereigntyBase">
+  <PawnKindDef ParentName="VanuSovereigntyBase">
     <defName>VSHeavyAssaultLasher</defName>
     <label>VS Heavy Assault trooper</label>
     <race>Human</race>
@@ -260,7 +260,7 @@
     </inventoryOptions>
   </PawnKindDef>
 
-    <PawnKindDef ParentName="VaunsovereigntyBase">
+    <PawnKindDef ParentName="VanuSovereigntyBase">
     <defName>VSCombatEngineer</defName>
     <label>VS Combat Engineer</label>
     <race>Human</race>
