@@ -7,7 +7,7 @@
 	<ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>Apparel_VSmaxhelmet</defName>
     <label>VS max helmet</label>
-    <description>The Vanu Sovereignty pinnacle of infantry armor. Capable of withstanding massive amounts of damage. The cost for such wounder is as steep as the price for technological freedom..</description>
+    <description>The Vanu Sovereignty pinnacle of infantry armor. Capable of withstanding massive amounts of damage. The cost for such wonder is as steep as the price for technological freedom..</description>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -45,7 +45,7 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-		<li>Vaunsovereignty</li>
+		<li>VanuSovereignty</li>
       </tags>
       <defaultOutfitTags>
 		<li>VSmax</li>
@@ -96,7 +96,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-		<li>Vaunsovereignty</li>
+		<li>VanuSovereignty</li>
       </tags>
       <defaultOutfitTags>
 	    <li>VSinfantry</li>
@@ -110,7 +110,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>Apparel_VSHAhelmet</defName>
     <label>VS Heavy Assault Helmet</label>
-    <description>Heavy Assault stander issue battle helmet</description>
+    <description>Heavy Assault standerd issue battle helmet</description>
     <techLevel>Spacer</techLevel>
 		    <recipeMaker>
       <researchPrerequisite>AuraxisHeavyArmor</researchPrerequisite>
