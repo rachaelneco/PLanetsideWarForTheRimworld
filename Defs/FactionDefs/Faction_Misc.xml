@@ -2,9 +2,9 @@
 <Defs>
 
     <FactionDef>
-		<defName>Vaunsovereignty</defName>
+		<defName>VanuSovereignty</defName>
 		<label>Vanu Sovereignty</label>
-    <description>People form a distent world who have come to research the mechinoids for lost Vanu tech</description>
+    <description>People form a distant world who have came to research the mechanoids for lost Vanu tech</description>
 	
 	
     <pawnsPlural>vanu sovereignty</pawnsPlural>
@@ -12,7 +12,7 @@
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
-    <leaderTitle>supprem cenobite</leaderTitle>
+    <leaderTitle>supreme cenobite</leaderTitle>
     <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
 	    <colorSpectrum>
       <li>(0.30, 0.01, 0.52)</li>
@@ -22,7 +22,7 @@
       <min>0</min>
       <max>5</max>
     </startingGoodwill>
-		<fixedName>Vaunsovereignty</fixedName>
+		<fixedName>VanuSovereignty</fixedName>
 		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
 		<techLevel>Spacer</techLevel>
 		<backstoryCategory>Civil</backstoryCategory>
