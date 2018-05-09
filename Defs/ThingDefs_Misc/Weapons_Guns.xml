@@ -20,7 +20,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_Nebula_vm</defName>
     <label>Nebula vm</label>
-    <description>Build using reclaimed tech from the forerunners found on a dissent world the nebula combines high yield energy cells with quantum tesseracting plasma to unleash a torrent of fire power.</description>
+    <description>Build using reclaimed tech from the forerunners found on a distant world. The nebula combines high yield energy cells with quantum tesseracting plasma to unleash a torrent of fire power.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/nebula_vm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -340,7 +340,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>Gun_Lahser</defName>
 		<label>Lasher</label>
-		<description>The Lasher fire volatile plasma bolts that explode on contact. .</description>
+		<description>The Lasher fires volatile plasma bolts that explode on contact. .</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/Lasher</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -564,7 +564,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_Repeater</defName>
     <label>Repeater</label>
-    <description>3 round burst pistel</description>
+    <description>3-round burst pistol</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Repeater</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -644,7 +644,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_Cycler</defName>
     <label>Cycler AR</label>
-    <description>A general-purpose military weapon for field or urban combat.</description>
+    <description>A general-purpose military weapon for field and/or urban combat.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Cycler</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -725,7 +725,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>Gun_Lynx</defName>
     <label>Lynx Carbine</label>
-    <description>A lighter calaber weapon then its cycler sister what allowes for greater rate for fire.</description>
+    <description>A lighter caliber weapon then its cycler sister which allows for greater rate of fire.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Lynx</texPath>
       <graphicClass>Graphic_Single</graphicClass>
