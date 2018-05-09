@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+
+	<WorkGiverDef>
+		<defName>DoBillsCortiumGrowthVat</defName>
+		<label>works at refinery</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>96</priorityInType>
+		<fixedBillGiverDefs>
+			<li>CortiumGrowthVat</li>
+		</fixedBillGiverDefs>
+		<verb>Growing Cortium</verb>
+		<gerund>Growing Cortium at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	
+	
+	
+	
+	</Defs>

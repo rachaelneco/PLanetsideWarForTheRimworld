@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="VaunsovereigntyBase" Abstract="True">
+    <defaultFactionType>Vaunsovereignty</defaultFactionType>
+    <chemicalAddictionChance>0.005</chemicalAddictionChance>
+    <baseRecruitDifficulty>0.99</baseRecruitDifficulty>
+    <backstoryCryptosleepCommonality>0.0004</backstoryCryptosleepCommonality>
+    <backstoryCategory>Civil</backstoryCategory>
+    <apparelTags>
+      <li>Vaunsovereignty</li>
+    </apparelTags>
+  </PawnKindDef>
+
+  <PawnKindDef Name="VSinfantry" ParentName="VaunsovereigntyBase">
+    <defName>VSinfantry</defName>
+    <label>VS Light Assault</label>
+    <race>Human</race>
+    <combatPower>30</combatPower>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>500</min>
+      <max>3000</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.4</apparelAllowHeadwearChance>
+    <weaponMoney>
+      <min>1000</min>
+      <max>4500</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>VSLightAssault</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>3000</min>
+      <max>9000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="VSinfantry">
+    <defName>VSinfiltrator</defName>
+    <label>VS Infiltrator</label>
+    <labelPlural>VSinfiltrators</labelPlural>
+    <apparelTags>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+	<weaponTags>
+      <li>VSinfiltrator</li>
+	</weaponTags>
+    <minGenerationAge>40</minGenerationAge>
+    <maxGenerationAge>60</maxGenerationAge>
+  </PawnKindDef>
+  
+   <PawnKindDef ParentName="VaunsovereigntyBase">
+    <defName>VSinfiltratorSlash</defName>
+    <label>VS Heavy Assault trooper</label>
+    <race>Human</race>
+    <combatPower>53</combatPower>
+    <maxGenerationAge>35</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>3000</min>
+      <max>4000</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.6</apparelAllowHeadwearChance>
+		<apparelTags>
+      <li>VSinfiltratorSlash</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>2000</min>
+      <max>10000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>VSinfiltratorSlash</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.2</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.70</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef> 
+  
+  <PawnKindDef ParentName="VSinfantry">
+    <defName>TownTrader</defName>
+    <label>town trader</label>
+    <trader>true</trader>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="VaunsovereigntyBase">
+    <defName>VSHeavyAssault</defName>
+    <label>VS Heavy Assault trooper</label>
+    <race>Human</race>
+    <combatPower>53</combatPower>
+    <maxGenerationAge>35</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>3000</min>
+      <max>4000</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.6</apparelAllowHeadwearChance>
+		<apparelTags>
+      <li>VSHeavyAssault</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>2000</min>
+      <max>10000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>VSHeavyAssault</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.2</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.70</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="VaunsovereigntyBase">
+    <defName>VSHeavyAssaultLasher</defName>
+    <label>VS Heavy Assault trooper</label>
+    <race>Human</race>
+    <combatPower>53</combatPower>
+    <maxGenerationAge>35</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>3000</min>
+      <max>4000</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.9</apparelAllowHeadwearChance>
+	<apparelTags>
+      <li>VSHeavyAssault</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>2000</min>
+      <max>10000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>VSHeavyAssaultLasher</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.2</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.70</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="VSinfantry">
+    <defName>VSmax</defName>
+    <label>VSmax</label>
+    <race>Human</race>
+    <combatPower>53</combatPower>
+    <maxGenerationAge>35</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>4000</min>
+      <max>90000</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.6</apparelAllowHeadwearChance>
+    <weaponMoney>
+      <min>4000</min>
+      <max>10000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>VSmax</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.2</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.70</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+
+    <PawnKindDef ParentName="VaunsovereigntyBase">
+    <defName>VSCombatEngineer</defName>
+    <label>VS Combat Engineer</label>
+    <race>Human</race>
+    <combatPower>30</combatPower>
+    <maxGenerationAge>35</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>3000</min>
+      <max>4000</max>
+    </apparelMoney>
+    <apparelAllowHeadwearChance>0.9</apparelAllowHeadwearChance>
+	<apparelTags>
+      <li>Vaunsovereignty</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>2000</min>
+      <max>10000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>VSCombatEngineer</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.2</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.70</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  
+</Defs>

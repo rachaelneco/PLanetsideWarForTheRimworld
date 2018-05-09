@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+ 
+ <!--=============================== vs research bench ===============================-->
+ 
+<RecipeDef>
+		<defName>MakeCortiumFromOrganics</defName>
+		<label>make Cortium from organics</label>
+		<description>Make a batch of cortium by extracting biofuel from organic feedstocks.</description>
+		<jobString>Refining cortium from organics.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Foods</li>
+						<li>PlantMatter</li>
+					</categories>
+					<exceptedThingDefs>
+						<li>Hay</li>
+					</exceptedThingDefs>
+				</filter>
+				<count>3.5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Foods</li>
+				<li>PlantMatter</li>
+			</categories>
+			<exceptedThingDefs>
+				<li>Hay</li>
+			</exceptedThingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<exceptedCategories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</exceptedCategories>
+		</defaultIngredientFilter>
+		<products>
+			<Cortium>35</Cortium>
+		</products>
+	</RecipeDef>
+  </Defs>

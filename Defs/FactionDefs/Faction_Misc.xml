@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef>
+		<defName>Vaunsovereignty</defName>
+		<label>Vanu Sovereignty</label>
+    <description>People form a distent world who have come to research the mechinoids for lost Vanu tech</description>
+	
+	
+    <pawnsPlural>vanu sovereignty</pawnsPlural>
+    <baseSelectionWeight>1</baseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>supprem cenobite</leaderTitle>
+    <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
+	    <colorSpectrum>
+      <li>(0.30, 0.01, 0.52)</li>
+	  <li>(0.30, 0.01, 0.52)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>0</min>
+      <max>5</max>
+    </startingGoodwill>
+		<fixedName>Vaunsovereignty</fixedName>
+		<baseNameMaker>NamerFactionBaseOutlander</baseNameMaker>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategory>Civil</backstoryCategory>
+		<geneticVariance>0.8</geneticVariance>
+		<hairTags>
+			<li>Rural</li>
+		</hairTags>
+    <naturalColonyGoodwill>
+      <min>-60</min>
+      <max>0</max>
+    </naturalColonyGoodwill>
+    <caravanTraderKinds>
+	
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Normal</kindDef>
+        <options>
+					<VSinfiltratorSlash>50</VSinfiltratorSlash>
+					<VSCombatEngineer>15</VSCombatEngineer>
+					<VSinfantry>70</VSinfantry>
+					<VSmax>25</VSmax>
+					<VSinfiltrator>100</VSinfiltrator>
+					<VSHeavyAssault>100</VSHeavyAssault>
+					<VSHeavyAssaultLasher>100</VSHeavyAssaultLasher>
+				</options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <TownTrader>1</TownTrader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+					<VSCombatEngineer>15</VSCombatEngineer>
+					<VSinfantry>70</VSinfantry>
+					<VSinfiltratorSlash>50</VSinfiltratorSlash>
+					<VSmax>25</VSmax>
+					<VSinfiltrator>100</VSinfiltrator>
+					<VSHeavyAssault>100</VSHeavyAssault>
+					<VSHeavyAssaultLasher>100</VSHeavyAssaultLasher>
+					
+					
+				</guards>
+      </li>
+      <li>
+        <kindDef>FactionBase</kindDef>
+        <options>
+					<VSCombatEngineer>15</VSCombatEngineer>
+					<VSinfiltratorSlash>50</VSinfiltratorSlash>
+					<VSinfantry>100</VSinfantry>
+					<VSinfantry>100</VSinfantry>
+					<VSmax>100</VSmax>
+					<VSHeavyAssault>100</VSHeavyAssault>
+					<VSinfiltrator>100</VSinfiltrator>
+				</options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
+	
+  </FactionDef>
+
+</Defs>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+ 
+<Defs>
+ 
+  <!-- ====================================== VS max helmet =========================================== -->
+ 
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_VSmaxhelmet</defName>
+    <label>VS max helmet</label>
+    <description>The Vanu Sovereignty pinnacle of infantry armor. Capable of withstanding massive amounts of damage. The cost for such wounder is as steep as the price for technological freedom..</description>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>AuraxisHeavyArmor</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/VSmaxhelmet/VSmaxhelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>2.7</Mass>
+      <ArmorRating_Blunt>.80</ArmorRating_Blunt>
+      <ArmorRating_Sharp>.99</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.70</ArmorRating_Heat>
+      <ArmorRating_Electric>99</ArmorRating_Electric>
+      <Insulation_Cold>-30</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.5</MoveSpeed>
+    </equippedStatOffsets>
+    <costList>
+      <Component>2</Component>
+      <Cortium>100</Cortium>
+    </costList>
+		<generateCommonality>2</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/VSmaxhelmet/VSmaxhelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+		<li>Vaunsovereignty</li>
+      </tags>
+      <defaultOutfitTags>
+		<li>VSmax</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+  
+  <!-- ====================================== VS Light Assaultlt =========================================== -->
+  
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_VSLAHelmet</defName>
+    <label>VS Light Assault helmet</label>
+    <description>Light Assault stander issue battle helmet</description>
+    <techLevel>Spacer</techLevel>
+	    <recipeMaker>
+      <researchPrerequisite>AuraxisArmor</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/VSLAhelmet/VSLAhelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.14</MoveSpeed>
+			<PsychicSensitivity>-0.50</PsychicSensitivity>
+		</equippedStatOffsets>
+    <costList>
+      <Component>2</Component>
+      <Cortium>20</Cortium>
+    </costList>
+		<apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/VSLAhelmet/VSLAhelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+		<li>Vaunsovereignty</li>
+      </tags>
+      <defaultOutfitTags>
+	    <li>VSinfantry</li>
+		<li>VSinfiltrator</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+<!-- ====================================== VS Heavy Assault =========================================== -->
+  
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>Apparel_VSHAhelmet</defName>
+    <label>VS Heavy Assault Helmet</label>
+    <description>Heavy Assault stander issue battle helmet</description>
+    <techLevel>Spacer</techLevel>
+		    <recipeMaker>
+      <researchPrerequisite>AuraxisHeavyArmor</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/VSHAhelmet/VSHAhelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>2</Mass>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+			<PsychicSensitivity>-0.50</PsychicSensitivity>
+		</equippedStatOffsets>
+    <costList>
+      <Component>2</Component>
+      <Cortium>40</Cortium>
+    </costList>
+		<apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/VSHAhelmet/VSHAhelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+		<li>VSHeavyAssault</li>
+      </tags>
+      <defaultOutfitTags>
+	    <li>VSHeavyAssault</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  
+ </Defs>

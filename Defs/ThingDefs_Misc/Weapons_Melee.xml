@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>	
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MeleeWeapon_LuminShard</defName>
+		<label>VS LuminShard</label>
+    <techLevel>Spacer</techLevel>
+		<description>A knife with a activateable plasma feild that will allow it to cut through almost any thing</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/LuminShard</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <weaponTags>
+      <li>VSinfiltratorSlash</li>
+    </weaponTags>
+    <costStuffCount>40</costStuffCount>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>0.5</Mass>
+      <Weapon_Bulk>0.2</Weapon_Bulk>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.0</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>35</power>
+        <cooldownTime>0.7</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>30.0</power>
+        <cooldownTime>1.0</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+			<researchPrerequisite>AuraxisWeapons</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MeleeWeapon_LuminBlade</defName>
+		<label>VS LuminBlade</label>
+    <techLevel>Spacer</techLevel>
+		<description>A sword with a activateable plasma feild that will allow it to cut through almost any thing</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/LuminBlade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    <weaponTags>
+      <li>VSinfiltratorSlash</li>
+    </weaponTags>
+    <costStuffCount>40</costStuffCount>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>0.5</Mass>
+      <Weapon_Bulk>0.2</Weapon_Bulk>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>1.0</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>80</power>
+        <cooldownTime>1.7</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>50</power>
+        <cooldownTime>1.0</cooldownTime>
+      </li>
+    </tools>
+		<recipeMaker>
+			<researchPrerequisite>AuraxisHeavyWeapons</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	
+</Defs>

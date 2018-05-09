@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ChargeBlasterHeavy</defName>
+    <label>charge blaster shot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Charge_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>21</damageAmountBase>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_Nebula_vm</defName>
+    <label>Nebula vm</label>
+    <description>Build using reclaimed tech from the forerunners found on a dissent world the nebula combines high yield energy cells with quantum tesseracting plasma to unleash a torrent of fire power.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/nebula_vm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <statBases>
+      <WorkToMake>100000</WorkToMake>
+      <Mass>10</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.39</AccuracyMedium>
+      <AccuracyLong>0.09</AccuracyLong>
+      <RangedWeapon_Cooldown>0.78</RangedWeapon_Cooldown>
+      <Weapon_Bulk>2.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Cortium>45</Cortium>
+      <Component>12</Component>
+    </costList>
+			<recipeMaker>
+      <researchPrerequisite>AuraxisHeavyWeapons</researchPrerequisite>
+    </recipeMaker>  
+    <techLevel>Industrial</techLevel>
+    <weaponTags>
+      <li>VSmax</li>
+    </weaponTags>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_ChargeBlasterHeavy</defaultProjectile>
+        <forcedMissRadius>1.0</forcedMissRadius>
+        <warmupTime>1.0</warmupTime>
+        <range>30</range>
+        <burstShotCount>45</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>ShotChargeBlaster</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrels</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  
+  <!-- ======================================= VS pulsar =======================================-->  
+  
+  <ThingDef ParentName="BaseBullet">
+		<defName>Bullet_ChargeRifle</defName>
+		<label>charge shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>19</damageAmountBase>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_Pulsar</defName>
+		<label>Pulsar</label>
+		<description>Charged-shot energy/projectile rifle.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/pulsar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>4.6</Mass>
+			<AccuracyTouch>0.88</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.59</AccuracyLong>
+			<RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>AuraxisWeapons</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<Cortium>30</Cortium>
+			<Component>5</Component>
+		</costList>
+		<generateCommonality>0.30</generateCommonality>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>VSLightAssault</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>26</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>7</burstShotCount>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>0.5</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+ <!-- ======================================= VS maw =======================================-->   
+  
+  <ThingDef ParentName="BaseBullet">
+		<defName>Bullet_ChargeRifle</defName>
+		<label>charge shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_VE_H_MAW</defName>
+		<label>VE H Maw</label>
+		<description>Advanced cooling techniques provides the maw LMG weapon system to combine reload speed with stopping power.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/VE_H_MAW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>AuraxisHeavyWeapons</researchPrerequisite>
+    </recipeMaker>
+		<statBases>
+			<WorkToMake>34000</WorkToMake>
+			<Mass>4.5</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.24</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+		</statBases>
+		<costList>
+			<Cortium>75</Cortium>
+			<Component>12</Component>
+		</costList>	
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>40</range>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<burstShotCount>9</burstShotCount>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>VSHeavyAssault</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.4</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+   <!-- ======================================= Phaseshift Sniper =======================================-->  
+  
+  	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_ChargeLance</defName>
+		<label>charge lance shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_Phaseshift</defName>
+		<label>Phaseshift Sniper</label>
+		<description>Charged-shot rail-assisted plasma sniper weapon.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Phaseshift</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>8</Mass>
+			<WorkToMake>34000</WorkToMake>
+			<AccuracyTouch>0.68</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.99</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+      <Weapon_Bulk>2.0</Weapon_Bulk>
+		</statBases>
+		<costList>
+      <Cortium>20</Cortium>
+      <Component>20</Component>
+    </costList>
+			<recipeMaker>
+      <researchPrerequisite>AuraxisHeavyWeapons</researchPrerequisite>
+    </recipeMaker>	
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+		 <li>VSinfiltrator</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ChargeLance</defaultProjectile>
+				<warmupTime>1.50</warmupTime>
+				<range>45</range>
+				<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.2</cooldownTime>
+      </li>
+    </tools>
+	</ThingDef>
+  
+  <!-- ======================================= Lasher =======================================-->  
+  
+    	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_Lahser</defName>
+		<label>Lahser bolt shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/LasherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<projectile>
+			<explosionRadius >1.5</explosionRadius >
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Gun_Lahser</defName>
+		<label>Lasher</label>
+		<description>The Lasher fire volatile plasma bolts that explode on contact. .</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/Lasher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>8</Mass>
+			<WorkToMake>34000</WorkToMake>
+			<AccuracyTouch>0.6</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.35</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <Weapon_Bulk>2.0</Weapon_Bulk>
+		</statBases>
+		<costList>
+      <Cortium>40</Cortium>
+      <Component>15</Component>
+    </costList>
+			<recipeMaker>
+      <researchPrerequisite>AuraxisHeavyWeapons</researchPrerequisite>
+    </recipeMaker>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+		 <li>VSHeavyAssaultLasher</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Lahser</defaultProjectile>
+				<forcedMissRadius>0.1</forcedMissRadius>
+				<warmupTime>0.8</warmupTime>
+				<range>25</range>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<burstShotCount>9</burstShotCount>
+				<soundCast>ShotChargeRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	</ThingDef>
+  
+   <!-- ==================== RemoteCfour ========================== -->
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>Weapon_RemoteCfour</defName>
+		<label>Remote RemoteCfour</label>
+		<description>A throwable block of C4 high explosive.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/RemoteCfour</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractGrenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Cortium>30</Cortium>
+			<Component>10</Component>
+		</costList>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <Weapon_Bulk>0.2</Weapon_Bulk>
+		</statBases>
+		<weaponTags>
+			<li>VSCombatEngineer</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw Cfour</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12</range>
+				<forcedMissRadius>.5</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_RemoteCfour</defaultProjectile>
+			</li>
+		</verbs>
+		<smeltProducts>
+			<Cortium>4</Cortium>
+		</smeltProducts>
+			<recipeMaker>
+      <researchPrerequisite>AuraxisWeapons</researchPrerequisite>
+    </recipeMaker>		
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_RemoteCfour</defName>
+		<label>RemoteCfour</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/RemoteCfour</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >2</explosionRadius >
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>150</damageAmountBase>
+			<explosionDelay>100</explosionDelay>
+		</projectile>
+	</ThingDef>
+
+	
+	  <!-- ===========================Terran Republic GUNS=================================== -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Inquisitor</defName>
+    <label>Inquisitor bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_Inquisitor</defName>
+    <label>Inquisitor</label>
+    <description>Strong close range semi-auto pistol </description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Inquisitor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRevolver</soundInteract>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>1.4</Mass>
+      <AccuracyTouch>0.91</AccuracyTouch>
+      <AccuracyShort>0.91</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+      <Weapon_Bulk>0.5</Weapon_Bulk>
+    </statBases>
+    <weaponTags>
+      <li>TerranRepublic</li>
+    </weaponTags>
+    <costList>
+      <Steel>30</Steel>
+      <Component>2</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Inquisitor</defaultProjectile>
+        <warmupTime>0.2</warmupTime>
+        <range>26</range>
+        <soundCast>ShotRevolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>0.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+	
+	
+	 <!-- ==========================Repeater==================================== -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Repeater</defName>
+    <label>Repeater bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_Repeater</defName>
+    <label>Repeater</label>
+    <description>3 round burst pistel</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Repeater</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractAutopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+    </recipeMaker>
+    <weaponTags>
+      <li>TerranRepublic</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>1.0</Mass>
+      <AccuracyTouch>0.91</AccuracyTouch>
+      <AccuracyShort>0.81</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <Weapon_Bulk>0.5</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <Component>2</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Repeater</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>22</range>
+		<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+		<burstShotCount>4</burstShotCount>
+        <soundCast>ShotAutopistol</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  	<!-- =====================Cycler========================= -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Cycler</defName>
+    <label>Cycler bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_Cycler</defName>
+    <label>Cycler AR</label>
+    <description>A general-purpose military weapon for field or urban combat.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Cycler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.91</AccuracyShort>
+      <AccuracyMedium>0.81</AccuracyMedium>
+      <AccuracyLong>0.74</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Component>7</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Cycler</defaultProjectile>
+        <warmupTime>0.7</warmupTime>
+        <range>30</range>
+        <burstShotCount>15</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>ShotAssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>TerranRepublicEliteGun</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  
+    	<!-- =====================Lynx========================= -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Lynx</defName>
+    <label>Lynx bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_Lynx</defName>
+    <label>Lynx Carbine</label>
+    <description>A lighter calaber weapon then its cycler sister what allowes for greater rate for fire.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Lynx</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>2.5</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.91</AccuracyShort>
+      <AccuracyMedium>0.81</AccuracyMedium>
+      <AccuracyLong>0.74</AccuracyLong>
+      <RangedWeapon_Cooldown>1.43</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Component>7</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Cycler</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>30</range>
+        <burstShotCount>15</burstShotCount>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <soundCast>ShotAssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+		<weaponTags>
+			<li>TerranRepublicLightGun</li>
+		</weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  	<!-- ========================Rams Sniper====================== -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_RamsSniper</defName>
+    <label>rams sniper bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>80</damageAmountBase>
+      <speed>150</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_RamsSniper</defName>
+    <label>Rams sniper rifle</label>
+    <description>Ancient pattern military sniper rifle. Bolt action. Long range, great accuracy and power.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Rams</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>55000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.89</AccuracyShort>
+      <AccuracyMedium>0.89</AccuracyMedium>
+      <AccuracyLong>0.98</AccuracyLong>
+      <RangedWeapon_Cooldown>4.33</RangedWeapon_Cooldown>
+      <Weapon_Bulk>2.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Component>8</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RamsSniper</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>60</range>
+        <soundCast>ShotSniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>SniperRifle</li>
+    </weaponTags>
+  </ThingDef>
+  
+  </Defs>
