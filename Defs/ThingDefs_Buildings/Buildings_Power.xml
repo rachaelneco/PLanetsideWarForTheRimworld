@@ -3,7 +3,7 @@
 
 <ThingDef ParentName="BuildingBase">
     <defName>CortiumPowerGenerator</defName>
-    <label>Cortium PowerG enerator</label>
+    <label>Cortium Power Generator</label>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Things/Building/Power/CortiumPowerGenerator</texPath>

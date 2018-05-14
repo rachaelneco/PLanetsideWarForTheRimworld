@@ -5,7 +5,7 @@
 	<ThingDef ParentName="ArmorMakeableBase">
     <defName>Apparel_VSmax</defName>
     <label>VS Max Armor</label>
-    <description>The Vanu Sovereignty pinnacle of infantry armor. Capable of withstanding massive amounts of damage. The cost for such wounder is as steep as the price for technological freedom.. </description>
+    <description>The Vanu Sovereignty pinnacle of infantry armor. Capable of withstanding massive amounts of damage. The cost for such wonder is as steep as the price for technological freedom.. </description>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -51,7 +51,7 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-		<li>Vaunsovereignty</li>
+		<li>VanuSovereignty</li>
       </tags>
       <defaultOutfitTags>
 		<li>VSmax</li>
@@ -65,7 +65,7 @@
   <ThingDef ParentName="ArmorMakeableBase">
     <defName>Apparel_VSLA</defName>
     <label>VS Light Assalt Armor</label>
-    <description>VS Light assalt patern armor vest. Jet pack is undear construction.</description>
+    <description>VS Light assault patern armor vest. Jet pack is under construction.</description>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
         <researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -106,7 +106,7 @@
 		<li>Vaunsovereignty</li>
       </tags>
       <defaultOutfitTags>
-        <li>Vaunsovereignty</li>
+        <li>VanuSovereignty</li>
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
@@ -155,10 +155,10 @@
         <li>Middle</li>
       </layers>
       <tags>
-		<li>Vaunsovereignty</li>
+		<li>VanuSovereignty</li>
       </tags>
       <defaultOutfitTags>
-        <li>Vaunsovereignty</li>
+        <li>VanuSovereignty</li>
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
@@ -207,7 +207,7 @@
         <li>Middle</li>
       </layers>
       <tags>
-		<li>Vaunsovereignty</li>
+		<li>VanuSovereignty</li>
 			<li>VSHeavyAssault</li>
       </tags>
       <defaultOutfitTags>
@@ -219,7 +219,7 @@
   <ThingDef ParentName="ArmorMakeableBase">
     <defName>Apparel_VSinfiltrator</defName>
     <label>VS Infiltrator Armor</label>
-    <description>VS infiltrator stealth armor, offers little protections. but in exchanged grants after </description>
+    <description>VS infiltrator stealth armor, offers little protection. but in exchange grants after </description>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -264,10 +264,10 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
-		<li>Vaunsovereignty</li>
+		<li>VanuSovereignty</li>
       </tags>
       <defaultOutfitTags>
-		<li>Vaunsovereignty</li>
+		<li>VanuSovereignty</li>
       </defaultOutfitTags>
     </apparel>
     
@@ -313,10 +313,10 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>Vaunsovereignty</li>
+        <li>VanuSovereignty</li>
       </tags>
       <defaultOutfitTags>
-		<li>Vaunsovereignty</li>
+		<li>VanuSovereignty</li>
 
       </defaultOutfitTags>
     </apparel>
@@ -361,10 +361,10 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-		<li>Vaunsovereignty</li>
+		<li>VanuSovereignty</li>
       </tags>
       <defaultOutfitTags>
-		<li>Vaunsovereignty</li>
+		<li>VanuSovereignty</li>
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
@@ -374,7 +374,7 @@
    <ThingDef ParentName="ApparelMakeableBase">
     <defName>Apparel_VSNanoSkinSuit</defName>
     <label>VS Nano Skin Suit</label>
-    <description>A spcial garment made to be warn under ones armor to keep them warm when its cold and cool when its hot</description>
+    <description>A special garment made to be worn under ones armor to keep them warm when its cold and cool when its hot</description>
 	<techLevel>Spacer</techLevel>
     <recipeMaker>
       <researchPrerequisite>AuraxisCloths</researchPrerequisite>
@@ -414,7 +414,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>Vaunsovereignty</li>
+        <li>VanuSovereignty</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>

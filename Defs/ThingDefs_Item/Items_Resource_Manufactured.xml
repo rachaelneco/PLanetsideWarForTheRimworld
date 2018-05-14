@@ -6,7 +6,7 @@
  <ThingDef ParentName="ResourceBase">
     <defName>Cortium</defName>
     <label>Cortium</label>
-    <description>A hard volatile crystal with massive energy protention.</description>
+    <description>A hard volatile crystal with massive energy potential.</description>
 		<tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Item/Resource/Cortium</texPath>

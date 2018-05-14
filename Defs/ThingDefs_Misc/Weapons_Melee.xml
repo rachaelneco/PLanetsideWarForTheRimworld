@@ -5,7 +5,7 @@
 		<defName>MeleeWeapon_LuminShard</defName>
 		<label>VS LuminShard</label>
     <techLevel>Spacer</techLevel>
-		<description>A knife with a activateable plasma feild that will allow it to cut through almost any thing</description>
+		<description>A knife with an activatable plasma field that will allow it to cut through almost anything</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/LuminShard</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -59,7 +59,7 @@
 		<defName>MeleeWeapon_LuminBlade</defName>
 		<label>VS LuminBlade</label>
     <techLevel>Spacer</techLevel>
-		<description>A sword with a activateable plasma feild that will allow it to cut through almost any thing</description>
+		<description>A sword with an activatable plasma field that will allow it to cut through almost anything</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/LuminBlade</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
